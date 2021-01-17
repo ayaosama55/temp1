@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <!-- start nav bar -->
+    <nav class="nav-bar">
+        <div class="container">
+            <div class="logo float-l">
+                <img src="images/logo.jpg" alt="" class="res-img" />
+            </div>
+            <ul class="classic-list float-r">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="active"><a href="album.html">Albums</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li>
+                    <form>
+                        <div class="search">
+                            <input id="input" type="text" placeholder="Search" />
+                            <a href="#"><i class="fa fa-search"></i></a>
+                        </div>
+                    </form>
+                </li>
+            </ul>
+            <div class="icon float-r">
+                <a href="#"><i id="icon" class="fa fa-navicon" data="aya"></i></a>
+            </div>
+            <div class="clear-fix"></div>
+        </div>
+    </nav>
+    <div class="list" id="list">
+        <ul class="classic-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="album.html">Albums</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+    </div>
+    <!-- end nav bar -->
+    <!-- start album paga -->
+    <article class="albumpage">
+        <div class="container">
+            <h2>Album</h2>
+        </div>
+    </article>
+    <!-- end album bage -->
+    <!-- start ALBUMS-BOX -->
+    <article class="album">
+        <div class="container">
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem</p>
+            <section>
+                <div class="image">
+                    <img src="images/album1.jpg" alt="" class="res-img" />
+                </div>
+                <div class="hov">
+                    <i class="fa fa-search"></i>
+                </div>
+            </section>
+            <section>
+                <div class="image">
+                    <img src="images/album2.jpg" alt="" class="res-img" />
+                </div>
+                <div class="hov">
+                    <i class="fa fa-search"></i>
+                </div>
+            </section>
+            <section>
+                <div class="image">
+                    <img src="images/album2.jpg" alt="" class="res-img" />
+                </div>
+                <div class="hov">
+                    <i class="fa fa-search"></i>
+                </div>
+            </section>
+            <section>
+                <div class="image">
+                    <img src="images/album1.jpg" alt="" class="res-img" />
+                </div>
+                <div class="hov">
+                    <i class="fa fa-search"></i>
+                </div>
+            </section>
+            <section>
+                <div class="image">
+                    <img src="images/album1.jpg" alt="" class="res-img" />
+                </div>
+                <div class="hov">
+                    <i class="fa fa-search"></i>
+                </div>
+            </section>
+            <section>
+                <div class="image">
+                    <img src="images/album2.jpg" alt="" class="res-img" />
+                </div>
+                <div class="hov">
+                    <i class="fa fa-search"></i>
+                </div>
+            </section>
+            <div class="clear-fix"></div>
+        </div>
+    </article>
+    <!-- end ALBUMS-BOX-->
+    <!-- start contact us -->
+    <article class="contact">
+        <div class="container">
+            <section class="contact-us">
+                <h2>Contact Us</h2>
+                <ul class="classic-list call">
+                    <li><i class="fa fa-location-arrow"></i>104 New York , USA</li>
+                    <li><i class="fa fa-phone"></i>Phone : ( +71 5896547 )</li>
+                    <li><i class="fa fa-envelope"></i>Email : demo@email.com</li>
+                </ul>
+                <ul class="icon classic-list">
+                    <li><a href="!#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="!#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="!#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="!#"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </section>
+            <section class="form">
+                <h2>Get In Touch</h2>
+                <form>
+                    <input type="text" placeholder="Name" />
+                    <input type="email" placeholder="E-mail" />
+                    <input type="tel" placeholder="Phone" />
+                    <textarea placeholder="Message"></textarea>
+                    <input type="submit" value="Send" />
+                </form>
+            </section>
+            <section class="music">
+                <h2>New Music</h2>
+                <div class="image">
+                    <img class="res-img" src="images/music1.jpg" alt="" />
+                </div>
+                <div class="image">
+                    <img class="res-img" src="images/music2.jpg" alt="" />
+                </div>
+                <div class="image">
+                    <img class="res-img" src="images/music3.jpg" alt="" />
+                </div>
+                <div class="image">
+                    <img class="res-img" src="images/music4.jpg" alt="" />
+                </div>
+            </section>
+            <div class="clear-fix"></div>
+        </div>
+    </article>
+    <!-- end contact us -->
+    <!-- start footer -->
+    <footer>
+        <div class="container">
+            &copy; 2019 All Rights Reserved. Free html Templates
+        </div>
+    </footer>
+    <!-- end footer -->
+    <script>
+        var icon = document.getElementById('icon');
+        icon.onclick = function () {
+            'use strict';
+            if (this.getAttribute('data') === 'aya'){
+                document.getElementById('list').style.display = 'block';
+                this.setAttribute('data', "ahmed");
+                this.setAttribute('class', 'fa fa-remove');
+            } else if (this.getAttribute('data') === 'ahmed') {
+                document.getElementById('list').style.display = 'none';
+                this.setAttribute('data', "aya");
+                this.setAttribute('class', 'fa fa-navicon');
+            }
+        }
+    </script>
+</body>
+</html>

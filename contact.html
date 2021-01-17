@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <!-- start nav bar -->
+    <nav class="nav-bar">
+        <div class="container">
+            <div class="logo float-l">
+                <img src="images/logo.jpg" alt="" class="res-img" />
+            </div>
+            <ul class="classic-list float-r">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="album.html">Albums</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li>
+                    <form>
+                        <div class="search">
+                            <input id="input" type="text" placeholder="Search" />
+                            <a href="#"><i class="fa fa-search"></i></a>
+                        </div>
+                    </form>
+                </li>
+            </ul>
+            <div class="icon float-r">
+                <a href="#"><i id="icon" class="fa fa-navicon" data="aya"></i></a>
+            </div>
+            <div class="clear-fix"></div>
+        </div>
+    </nav>
+    <div class="list" id="list">
+        <ul class="classic-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="album.html">Albums</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+    </div>
+    <!-- end nav bar -->
+    <!-- start contact paga -->
+    <article class="contactpage">
+        <div class="container">
+            <h2>contact</h2>
+        </div>
+    </article>
+    <!-- end contact bage -->
+    <!-- start contact -->
+    <article class="contact-page">
+        <div class="container">
+            <form class="contact-page-form">
+                <input type="text" placeholder="Name" />
+                <input type="email" placeholder="E-mail" />
+                <input type="tel" placeholder="Phone" />
+                <textarea placeholder="Message"></textarea>
+                <input type="submit" value="Send" />
+            </form>
+            <div class="clear-fix"></div>
+        </div>
+    </article>
+    <!-- end contact -->
+    <!-- start footer -->
+    <footer style="background-color: #000; color: #fff;margin-bottom: 0;">
+        <div class="container">
+            &copy; 2019 All Rights Reserved. Free html Templates
+        </div>
+    </footer>
+    <!-- end footer -->
+    <script>
+        var icon = document.getElementById('icon');
+        icon.onclick = function () {
+            'use strict';
+            if (this.getAttribute('data') === 'aya'){
+                document.getElementById('list').style.display = 'block';
+                this.setAttribute('data', "ahmed");
+                this.setAttribute('class', 'fa fa-remove');
+            } else if (this.getAttribute('data') === 'ahmed') {
+                document.getElementById('list').style.display = 'none';
+                this.setAttribute('data', "aya");
+                this.setAttribute('class', 'fa fa-navicon');
+            }
+        }
+    </script>
+</body>
+</html>
